@@ -117,7 +117,7 @@ i {
 	background: url('http://creativity103.com/unfocus/pics/blurred3778.jpg') no-repeat;
 	background-size: cover;
 	width: 25%;
-	height: 15.1em;
+	height: 100%;
 	z-index: 10;
 	position: absolute;
 	right: -25%;
@@ -495,4 +495,12 @@ hr {
 	height: 8em;
 	width: 60%;
 	margin-top: 13em;
+}
+
+.facebook {
+	transition: all ease-in-out 1s;
+}
+
+.texteditor {
+	transition: all ease-in-out 1s;
 }
