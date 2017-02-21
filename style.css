@@ -435,13 +435,6 @@ hr {
 	font-weight: bold;
 }
 
-#sublime {
-	width: 3em;
-	height: 3em;
-	margin-left: 6em;
-	margin-top: -2em;
-}
-
 #coding-content > #coding-brackets {
 	text-align: center;
 	font-family: 'Playfair Display', serif;
@@ -469,14 +462,6 @@ hr {
 	position: relative;
 	bottom: 1em;
 	z-index: -1;
-}
-
-#brackets {
-	width: 2em;
-	height: 2em;
-	position: absolute;
-	left: 8.6em;
-	top: 72em;
 }
 
 #conclusion {
