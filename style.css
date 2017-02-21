@@ -304,6 +304,18 @@ i {
 	height: 1.53em;
 }
 
+h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+p {
+	font-family: 'Playfair Display', serif;
+}
+
+a {
+	font-family: 'Playfair Display', serif;
+}
+
 .web-content > a {
 	font-family: 'Playfair Display', serif;
 }
