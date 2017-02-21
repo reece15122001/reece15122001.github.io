@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Website</title>
+		<link href="website.css" type="text/css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://use.fontawesome.com/319332d960.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+<header>
+	
+	<div class="banner">
+		
+		<img id="img1" src="http://www.shximai.com/data/out/67/67072155-faded-wallpapers.jpg" width="100%" height="200px" />
+
+	</div>
+
+<div class="fixed">
+
+	<div class="socialmedia">
+		
+		<a href="https://www.facebook.com/profile.php?id=100006553205324" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+		<a href="" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+		<a href="" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+		<a href="" target="_blank"><i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i></a>
+		<i class="fa fa-chevron-left" aria-hidden="true"></i><p>My Social Media</p>
+
+	</div>
+
+	<div id="sidebar-button">
+		
+		<i class="fa fa-navicon" aria-hidden="true"></i>
+
+	</div>
+
+	<div id="sidebar-close">
+		
+		<i class="fa fa-times" aria-hidden="true"></i>
+
+	</div>
+
+</div>
+
+</header>
+
+<script language="JavaScript">
+	
+$(document).ready(function(){
+	$('#sidebar-button').click(function(){
+		$('#sidebar').addClass('visible');
+	});
+});
+
+$(document).ready(function(){
+	$('#sidebar-button').click(function(){
+		$('.fa-times').addClass('sidebarisopen');
+	});
+});
+
+$(document).ready(function(){
+	$('#sidebar-close').click(function(){
+		$('#sidebar').removeClass('visible');
+	});
+});
+
+$(document).ready(function(){
+	$('#sidebar-close').click(function(){
+		$('.fa-times').removeClass('sidebarisopen');
+	});
+});
+
+$(document).ready(function(){
+	$('.fa-chevron-down').click(function(){
+		$('#border').addClass('border');
+	});
+});
+
+$(document).ready(function(){
+	$('.fa-chevron-down').click(function(){
+		$('#close-list').addClass('seen');
+	});
+});
+
+$(document).ready(function(){
+	$('#close-list').click(function(){
+		$('#border').removeClass('border');
+	});
+});
+
+$(document).ready(function(){
+	$('#close-list').click(function(){
+		$('#close-list').removeClass('seen');
+	});
+});
+
+</script>
+
+<body>
+
+	<div id="sidebar">
+
+		<div class="sidebar-list">
+	
+			<ul>
+				
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Other websites<i class="fa fa-chevron-down" id="chevron-down" aria-hidden="true"></i><a id="close-list"><i class="fa fa-times-circle" aria-hidden="true"></i></a></a>
+					<ul id="border">
+						<li><a href="#">First Website</a></li>
+						<li><a href="#">Media Queries</a></li>
+						<li><a href="#">Watersports</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Other HTML5 projects</a></li>
+				<li><a href="#fb-group">Group</a></li>
+				<li><a href="#text-editor">Text Editor Argument</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<br>
+
+<div class="web-content">
+		
+		<h3 id="web-content-title">Home</h3>
+
+		<h3 id="fb-group-title"><a name="fb-group">Facebook Coding Groups</a></h3>
+
+		<p id="web-explanation">Facebook Coding groups are very good for helping coders of all skill levels become better. They encourage teamwork to achieve one or several projects, started by many different members of the group. Coding groups of Facebook often have quite a lot of members and therefore have a lot of support for all skill levels of coders. People also will share a lot of projects they've been working on and encourage feedback, good or bad about their work. They also will encourage other members to take the code to their projects and edit it accordingly to your needs, helping your knowledge of coding by playing with more advanced code.</p>
+
+	<div class="fb-group-content">
+		
+		<img id="fb-group1-image1" src="http://i.imgur.com/eufhHyl.png" />
+
+		<p id="group-image-1-description">The Javascript, CSS and HTML group heavily support the sharing of coding and their projects, and they give very good feedback and pointers on how to possibly improve your work.</p>
+
+		<img id="fb-group1-image2" src="https://www.sololearn.com/Uploads/html-css.jpg" /><br><br><br><br><br><br><br><br><br><br><hr>
+
+	</div>
+
+	<h3 id="coding-content-title"><a name="text-editor">Text Editor Argument</a></h3>
+
+	<p id="coding-content-explanation">A new breed of editor has arrived. It fills the gaping void between basic text applications (Notepad, TextEdit, gedit, etc.) and full Integrated Development Environments (VisualStudio, Eclipse, NetBeans etc.) Simpler applications lack basic development requirements such as multiple documents, line numbering and code coloring. IDEs tend to be monolithic <a id="othertext">applications which cater for a specific language, framework or platform.</a>
+
+	<a>This review considers sophisticated code editors with the following criteria. All must be:</a>
+
+	<br>- Suited to web development<br>
+    - Cross-platform and work on Windows, Mac and Linux. Your preferences and settings should be available regardless of which Operating System you are using.<br>
+    - General-purpose text editors which support typical web languages. You should be able to use the same application for HTML, CSS, JavaScript, PHP, Ruby, SQL, markdown and more.<br>
+    - Highly customizable with cross-platform plugins and themes.<br>
+    - Fast and stable. Launching should never be a once-a-day dread like some IDEs.<br>
+    - Immediately usable without a steep learning curve or having to remember numerous keyboard shortcuts.<br></p>
+
+	<div class="coding-content">
+		
+		<img id="coding-image1" src="http://raduluchian.com/wp-content/uploads/post/brackets-vs-sublime-text/brackets-vs-sublime-text.jpg" />
+
+		<br><h3 id="coding-sublime-title">Sublime Text</h3><a href="#"><img id="sublime" src="http://3con14.pro/i2014/_data/recursos/sublime-text_logo.png" /></a>
+
+		<br><p id="coding-content-description">First, we have Sublime Text. The C++ and Python application was written by Jon Skinner and has attracted more than 2.5 million users since its launch in 2008. Reviews have been mostly positive and, while it wasn't the first sophisticated text editor, it set the bar for those which followed. Key features <a>include:</a><br>
+
+     - Comprehensive language support with TextMate-compatible grammars.<br>
+     - Multiple selections and column editing.<br>
+     - "Goto Anything" quick navigation to locate files and code.<br>
+     - A command palette to access all features.<br>
+     - A mini-map and code snippets.<br>
+     - Extensive customization, great themes and numerous plugins.<br>
+     - Good-looking, fast and stable.<br><br>
+
+	Unlike the other contenders, Sublime Text is a commercial product costing $70 per user (you can have as many installations as you like). You can evaluate the product for as long as you need; it'll nag you to purchase a license every so often. $70 is considerably more expensive than free but divide it by the number of hours usage and the cost becomes negligible.
+
+	Sublime Text is the most mature application and the only one not in a pre-release phase (although I was using version 3 beta for the purpose of this review). It therefore has a slight advantage but all the contenders are usable today.</p>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h3 id="coding-brackets">Brackets</h3><a href="#"><img id="brackets" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/1200px-Brackets_Icon.svg.png" /></a>
+
+	<p id="coding-content-description2">Brackets is an open source editor from Adobe. It's been specifically created for web developers and is written in HTML, CSS and JavaScript using CodeMirror in a Node.js container.<br>
+
+	Key features include:<br>
+
+    - Free and open source on all platforms<br>
+    - Good language and linting support especially for web development<br>
+    - Live browser preview and updates without a server (requires Chrome)<br>
+    - Inline CSS editing<br>
+    - A well-documented open API for plugin developers<br>
+    - Immediately usable with less reliance on configuration files<br>
+    - A good selection of themes and plugins with a built-in package manager<br>
+    - Multiple selection editing, auto-complete and color picker<br>
+    - Attractive interface<br><br>
+
+The project is developed in sprints and a new version is available every 2-3 weeks. There's no auto-update yet, but the editor will warn you when a new version of the application and plugins are available.
+
+	</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="conclusion">
+
+		<h3 id="conclusion">Conclusion</h3>
+
+		<p id="winner">Sublime Text remains the editor to beat despite the monetary cost. The editor is fast, stable and has a ridiculous number of features and plugins. The downside: features can be difficult to discover and you'll have a nagging doubt you're not using the editor to its full advantage.</p>
+
+	</div>
+
+</div>
+
+</body>
+</html>
